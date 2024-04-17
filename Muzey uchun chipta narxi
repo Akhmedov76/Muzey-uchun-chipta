@@ -1,0 +1,22 @@
+ques = "Muzeyga kirish uchun yoshingizni kiriting: "
+
+while True:
+    answer = input(ques)
+    if answer == "exit" or answer == "quit":
+        print("Dastur yakunlandi...")
+        break
+    yosh = int(answer)
+
+    if 5 < yosh < 7:
+        narx = 2000
+    elif 7 <= yosh < 18:
+        narx = 3000
+    elif 18 <= yosh < 65:
+        narx = 10000
+    else:
+        narx = 0
+
+    if narx == 0:
+        print("Sizga kirish bepul")
+    else:
+        print(f"Sizga kirish {narx} so'm")
